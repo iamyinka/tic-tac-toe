@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header class="intro">
+      <h1 class="intro__title">Play Tic, Tac, Toe</h1>
+      <div class="intro__desc">
+        <p>Built with HTML, CSS, JavaScript and of course - lots of love.</p>
+      </div>
+    </header>
+    <main>
+      <section class="players">
+        <div class="players__player">
+          <h2 class="players__player--selection">Player 1</h2>
+          <h4 class="players__player--name">Player Name</h4>
+          <div class="players__player--sign">X</div>
+          <a href="#" class="players__player--update">Edit</a>
+        </div>
+        <div class="players__player">
+          <h2 class="players__player--selection">Player 2</h2>
+          <h4 class="players__player--name">Player Name</h4>
+          <div class="players__player--sign">O</div>
+          <a href="#" class="players__player--update">Edit</a>
+        </div>
+      </section>
+      <section class="game">
+        <button class="game__btn">Start New Game</button>
+        <p class="game__info">It's your turn <span>Player Name</span>!</p>
+        <ul class="game__board">
+          <li class="game__board--tile active">X</li>
+          <li class="game__board--tile"></li>
+          <li class="game__board--tile active">O</li>
+          <li class="game__board--tile"></li>
+          <li class="game__board--tile"></li>
+          <li class="game__board--tile active">X</li>
+          <li class="game__board--tile"></li>
+          <li class="game__board--tile"></li>
+          <li class="game__board--tile"></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Tahoma", sans-serif;
+}
+
+.intro {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #6925e8;
+  color: #fff;
+}
+
+.intro__title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro__desc {
+  letter-spacing: 0.15rem;
+  font-size: 1.2rem;
+}
+
+/* Players */
+
+.players {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem 0;
+  gap: 1.5rem;
+}
+
+.players__player {
+  padding: 2rem;
+  background-color: rgba(126, 55, 240, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: 1px 2px 3px 1px rgba(10, 10, 10, 0.25);
+}
+
+.players__player--name {
+  font-size: 1.5rem;
+  color: #6925e8;
+}
+
+.players__player--sign {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.players__player--update {
+  font-size: 1.2rem;
+}
+
+/* Game Board */
+
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__btn {
+  background: #6925e8;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  border-radius: 5%;
+}
+
+.game__info {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.game__info span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.game__board {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  grid-template-rows: repeat(3, 5rem);
+}
+
+.game__board--tile {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(126, 55, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.game__board--tile:hover {
+  cursor: pointer;
+  background-color: #6925e8;
+}
+
+.game__board .active {
+  background: #6925e8;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.game__board .active:hover {
+  cursor: default;
+}
