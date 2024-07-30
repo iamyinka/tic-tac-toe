@@ -13,19 +13,29 @@
         <p>Built with HTML, CSS, JavaScript and of course - lots of love.</p>
       </div>
     </header>
+    <div class="modal">
+      <div class="modal-update-user-profile">
+        <h4>Set Player Name</h4>
+        <form action="" id="set-player-name">
+          <input type="text" placeholder="Enter player Name" name="player_name" id="player-name" autofocus />
+          <input type="submit" value="Save" />
+          <p id="error-msg"></p>
+        </form>
+      </div>
+    </div>
     <main>
       <section class="players">
         <div class="players__player">
           <h2 class="players__player--selection">Player 1</h2>
           <h4 class="players__player--name">Player Name</h4>
           <div class="players__player--sign">X</div>
-          <a href="#" class="players__player--update">Edit</a>
+          <a href="#" class="players__player--update" id="player-1-edit-btn" data-playerid="1">Edit</a>
         </div>
         <div class="players__player">
           <h2 class="players__player--selection">Player 2</h2>
           <h4 class="players__player--name">Player Name</h4>
           <div class="players__player--sign">O</div>
-          <a href="#" class="players__player--update">Edit</a>
+          <a href="#" class="players__player--update" id="player-2-edit-btn" data-playerid="2">Edit</a>
         </div>
       </section>
       <section class="game">
@@ -44,5 +54,8 @@
         </ul>
       </section>
     </main>
+
+    <script src="scripts/player-config.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
